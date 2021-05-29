@@ -1,0 +1,82 @@
+.carousel
+figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+.carousel figure{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.carousel h2{
+    color: #9E1346;
+    text-align: center;
+}
+.carousel{
+    background-color: white;
+    color: black;
+    max-width: 650px;
+    max-height: 220px;
+    overflow-y: hidden;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.carousel a{
+    color: black;
+}
+.carousel-items{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory ;
+}
+.carousel-item{
+
+    scroll-snap-align: center;
+}
+::-webkit-scrollbar{
+    height: 2px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color:    #2D1E3D;
+}
+
+#haut img{
+    width: 30px;
+    height: 30px;
+
+}
+
+
+/*Page de connection*/
+input[type=submit],.connexion a{
+    background-color: #9E1346;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type=text], select, textarea , input[type=password] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    resize: vertical;
+    font-family: 'Roboto', 'SansSerif';
+}
+textarea{
+    height: 200px;
+    width: 300px;
+}
+

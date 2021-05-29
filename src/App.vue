@@ -1,32 +1,33 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <header id="header_accueil">
+      <img id="logo" :src="'img/interface/logo.png'" alt="" width="50px" height="50px">
+      <h1>Jeux</h1>
+    </header>
+    <router-view></router-view>
+    <footer>
+      <div id="info">
+        <a href="#">Mentions légales</a>
+        <a href="#">CGU</a>
+        <a href="#">Contact</a>
+      </div>
+      <div id="decouvrir">
+        <a href="#">Recherche</a>
+        <a href="#">Mon profil</a>
+        <a href="#">Créer une règle</a>
+      </div>
+      <div id="reseaux">
+        <a href="#">Facebook</a>
+        <a href="#">Insta</a>
+      </div>
+    </footer>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import './assets/css/normalize.scss';
+@import './assets/css/typo.scss';
+@import './assets/css/styles-graphiques.scss';
+@import './assets/css/mise-en-page.scss';
 </style>

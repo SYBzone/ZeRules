@@ -1,0 +1,332 @@
+
+body{
+    background-color: #2D1E3D;
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+.jeux-type h2{
+    text-align: left;
+}
+#header_accueil{
+    position: relative;
+    top: 15px;
+    #logo{
+        position: absolute;
+
+    }
+}
+
+/* Bandeau header*/
+/*avant js =#dropdown-content a:hover {background-color: #F5C76B}
+
+#rect_barre:hover #dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 170px;
+}
+#dropdown-content1{
+    position: absolute;
+    background: transparent;
+    margin-left: 37px;
+    min-width: 120px;
+    padding-right: 0;
+    text-align: left;
+    border-left: 1px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#rect_barre:hover #dropdown-content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    border-left: 1px solid black;
+}
+#dropdown-content1 a:hover {background-color: #F5C76B}
+*/
+
+#rect_barre{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+#rect_filtre{
+    background-color: #F5C76B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+    left :10px;
+}
+#rect_filtre{
+    position: relative;
+}
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+#dropdown-content img{
+    width: 15px;
+    height: 15px;
+}
+
+#rect_barre>img{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+#rect_barre:hover #rect_filtre {
+    background-color: #F5C76B;
+}
+#rect_filtre>img{
+    width: 10px;
+    height: 10px;
+}
+
+#rect_recherche{
+    height: 40px;
+    position: relative;
+    z-index: -1;
+
+}
+#rect_recherche input{
+    height: 40px;
+    padding-left: 15px;
+    border: black 1px solid;
+    border-radius: 5px;
+    color: black;
+}
+#rect_recherche img{
+    margin-top: 8px;
+    position: absolute;
+    right: 11px;
+
+    width: 25px;
+    height: 25px;
+}
+
+/* main*/
+
+#suggestions{
+    background-color: #2D1E3D;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#Home_boite1,#Home_boite2{
+    background-color: white;
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#suggestions h1{
+    margin-bottom: 45px;
+}
+main h2{
+    text-align: center;
+}
+main li{
+    padding-bottom: 5px;
+}
+#nav>img{
+    width: 30px;
+    height: 30px;
+    color: #9E1346;
+}
+#nav{
+    background-color: #F5C76B;
+    height: 83px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 90%;
+    left: 0;
+}
+
+
+/* Page accueil jeux*/
+
+#accueil-jeux section{
+    margin-top: 100px;
+}
+.espace{
+    height: 100px;
+}
+/*Page de jeux type*/
+.header_jeux{
+    background-color: white;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+ .header_jeux #bas{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+.header_jeux #haut{
+     display: flex;
+     justify-content: space-around;
+     margin-bottom: 30px;
+     padding-top: 20px;
+ }
+
+.jeux-type{
+    background-color: white;
+    padding: 20px 20px;
+    text-align: left;
+    line-height: 1.4;
+}
+h1{
+    margin: 0;
+}
+
+/*Page de connexion
+ */
+.connexion{
+    min-width:375px ;
+}
+#formulaire{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.connexion>div>p{
+    color: white;
+}
+.connexion #inscrire{
+    margin-top: 20px;
+}
+.connexion img, #informations img,#contact img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#informations{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/*Page Information*/
+#contact{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#contact input{
+    font-family: 'Roboto', 'SansSerif';
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1000px){
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .header_jeux p{
+        font-size: 25px;
+    }
+    p,a{
+        font-size: 20px;
+    }
+    #haut img{
+        width: 50px;
+        height: auto;
+    }
+    #rect_barre{
+        width: 100% ;
+    }
+    #rect_filtre{
+        width: 120px;
+    }#Home_boite1 li ,#Home_boite2 li{
+         margin-left: 150px;
+     }
+
+    #informations{
+        margin-top: 20px;
+        height: 500px;
+    }
+    textarea{
+        width: 500px;
+        height: 200px;
+    }
+    .connexion{
+        margin-top: 50px;
+    }
+    .carousel{
+
+        max-height: 300px;
+        webkit-scroll-bar{
+
+        }
+    }
+
+    .carousel a{
+        color: black;
+    }
+    #logo{
+        width: 75px;
+        height: auto;
+    }
+
+}
+footer{
+    border-top: #9E1346 2px solid;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a{
+    color: #f5c76b;
+    text-decoration: none;
+    margin-top: 20px;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
