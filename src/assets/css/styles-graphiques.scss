@@ -57,7 +57,7 @@ figure img{
 
 
 /*Page de connection*/
-input[type=submit],.connexion a{
+input[type=submit], #inscrire{
     background-color: #9E1346;
     color: white;
     padding: 12px 20px;
@@ -65,15 +65,26 @@ input[type=submit],.connexion a{
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
+    font-family: 'Roboto', 'SansSerif';
 }
-input[type=text], select, textarea , input[type=password] {
-    width: 100%; /* Full width */
+#connecter{
+    background-color: #F5C76B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Roboto', 'SansSerif';
+}
+input[type=text], select, textarea , input[type=password], input[type=email] {
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
     border-radius: 10px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     resize: vertical;
     font-family: 'Roboto', 'SansSerif';
+
 }
 textarea{
     height: 200px;
