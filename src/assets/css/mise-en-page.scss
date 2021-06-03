@@ -26,7 +26,6 @@ h1{
     justify-content: start;
     align-items: start;
     margin-top: 200px;
-    margin-left: -200px;
     position: relative;
     min-width: 200px;
 }
@@ -61,7 +60,7 @@ h1{
 #rect_filtre{
     background-color: #F5C76B;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 40px;
     width: 100px;
@@ -257,6 +256,7 @@ h1{
 }
 
 @media screen and (min-width: 1000px){
+
     h1{
         font-size: 60px;
     }
@@ -305,6 +305,9 @@ h1{
     #logo{
         width: 75px;
         height: auto;
+
+        left: 0;
+        top: 0;
     }
 
 }

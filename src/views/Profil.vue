@@ -28,7 +28,7 @@
           </div>
         </div>
         <router-link :to="{name:'creationRegle'}">
-          <img :src="'/img/interface/ajouter.png'" alt="">
+          <img :src="'/img/interface/plus.png'" alt="">
         </router-link>
         <div id="rules_like">
           <h2>Mes rules favorites</h2>

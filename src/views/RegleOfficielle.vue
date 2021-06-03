@@ -35,9 +35,7 @@
             </p>
           </div>
         </div>
-        <a href="../api/inscription.php">
-          <img :src="'/img/interface/clock.png'" alt="ajouter">
-        </a>
+          <img :src="'/img/interface/ajout.png'" alt="ajouter">
         <section class="rect-bandeau">
           <Nav />
         </section>
