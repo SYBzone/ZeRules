@@ -91,3 +91,32 @@ textarea{
     width: 300px;
 }
 
+.Regle_alt{
+    margin-top: 50px;
+    width: 100%;
+    background: white;
+    height: 250px;
+    .Regle_alt_liste{
+
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+
+    }
+    .Regle_alt_row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .Regle_alt_nom{
+            padding-left: 20px;
+            color: black;
+        }
+        .Regle_alt_createur{
+            padding-right: 20px;
+            color: #9E1346;
+        }
+
+
+    }
+}
+

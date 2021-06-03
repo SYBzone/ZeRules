@@ -1,6 +1,6 @@
-<template >
+<template>
   <div>
-    <Header_base/>
+    <Header_base />
     <main id="accueil-jeux">
       <section class="carousel" v-for="regle in regles" :key="regle.name">
         <h2>{{ regle.name }}</h2>
@@ -15,12 +15,8 @@
             </li>
         </ul>
       </section>
-      <section id="rect-bandeau">
-        <div id="nav">
-          <img :src="'/img/interface/playing-cards.png'" alt="cartes" width="30px">
-          <img id="loupe" :src="'img/interface/loupe.png'" alt="Loupe" width="30px">
-          <img :src="'/img/interface/user.png'" alt="user" width="30px">
-        </div>
+      <section class="rect-bandeau">
+       <Nav />
       </section>
     </main>
   </div>
@@ -28,11 +24,12 @@
 
 
 <script>
-
 import Header_base from "@/components/header_base";
+import Nav from "@/components/nav";
 export default {
   name: 'Homepage',
   components : {
+    Nav,
     Header_base
   },
   props: {
@@ -109,6 +106,74 @@ export default {
               nom: "Scrabble"
             }
           ],
+          // regle: [{
+          //   img: 'uno.jpg',
+          //   id:
+          //       1,
+          //   nom: "Uno",
+          //   cat:"Cartes"
+          // },
+          //   {
+          //     img: 'president.jpg',
+          //     id: 2,
+          //     nom: "President",
+          //     cat:"Cartes"
+          //   },
+          //   {
+          //     img: 'tarot.jpg',
+          //     id: 3,
+          //     nom: "Tarot",
+          //     cat:"Cartes"
+          //   },
+          //   {
+          //     img: 'texaspoker.jpg',
+          //     id: 4,
+          //     nom: "Texas Poker",
+          //     cat:"Cartes"
+          //   },
+          //   {
+          //     img: 'bridge.jpg',
+          //     id: 5,
+          //     nom: "Bridge",
+          //     cat:"Cartes"
+          //   },
+          //   {
+          //     img: 'yams.jpg',
+          //     id: 6,
+          //     nom: "Yams",
+          //     cat:"Dés"
+          //   },
+          //   {
+          //     img: 'suite.jpg',
+          //     id: 7,
+          //     nom: "Suite",
+          //     cat:"Dés"
+          //   },
+          //   {
+          //     img: 'as.jpg',
+          //     id: 8,
+          //     nom: "As",
+          //     cat:"Dés"
+          //   },
+          //   {
+          //     img: 'backgammon.jpg',
+          //     id: 9,
+          //     nom: "Backgammon",
+          //     cat:"Plateau"
+          //   },
+          //   {
+          //     img: 'monopoly.jpg',
+          //     id: 10,
+          //     nom: "Monopoly",
+          //     cat:"Plateau"
+          //   },
+          //   {
+          //     img: 'scrabble.jpg',
+          //     id: 11,
+          //     nom: "Scrabble",
+          //     cat:"Plateau"
+          //   }
+          // ],
         }
 
       ]

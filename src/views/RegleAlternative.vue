@@ -14,9 +14,9 @@
       </div>
       <section id="rect-bandeau">
         <div id="nav">
-          <img :src="'/img/interface/playing-cards.png'" alt="cartes" width="30px">
-          <img id="loupe" :src="'/img/interface/loupe.png'" alt="Loupe" width="30px">
-          <img :src="'/img/interface/user.png'" alt="user" width="30px">
+          <router-link :to="{ name: 'Homepage'}"><img :src="'./src/assets/img/interface/playing-cards.png'" alt="cartes" width="30px"></router-link>
+          <router-link :to="{ name: 'index'}"><img  :src="'./src/assets/img/interface/loupe.png'" alt="Loupe" width="30px"></router-link>
+          <router-link :to="{ name: 'profil'}"><img :src="'./src/assets/img/interface/user.png'" alt="user" width="30px"></router-link>
         </div>
       </section>
     </main>

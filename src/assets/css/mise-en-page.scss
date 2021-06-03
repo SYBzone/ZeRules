@@ -18,34 +18,38 @@ h1{
     }
 }
 /* Bandeau header*/
-/*avant js =#dropdown-content a:hover {background-color: #F5C76B}
+#dropdown-content a:hover {background-color: #F5C76B}
 
 #rect_barre:hover #dropdown-content {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-top: 170px;
+    margin-top: 200px;
+    margin-left: -200px;
+    position: relative;
+    min-width: 200px;
 }
-#dropdown-content1{
+#dropdown-content1,#dropdown-content2,#dropdown-content3{
     position: absolute;
+    left: 10px;
+    top: 0;
     background: transparent;
     margin-left: 37px;
-    min-width: 120px;
+    width: 150px;
     padding-right: 0;
     text-align: left;
     border-left: 1px solid black;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
 }
-#rect_barre:hover #dropdown-content1{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
-    border-left: 1px solid black;
+#togg1:hover #dropdown-content1, #togg2:hover #dropdown-content2,#togg3:hover #dropdown-content3{
+
+    display: block;
+    z-index: 1;
 }
-#dropdown-content1 a:hover {background-color: #F5C76B}
-*/
+
+
 
 #rect_barre{
     margin-top: 20px;
@@ -88,10 +92,10 @@ h1{
     height: 15px;
 }
 
-#rect_barre>img{
+#logo{
     position: absolute;
-    top: 15px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
 }
 #rect_barre:hover #rect_filtre {
     background-color: #F5C76B;
@@ -154,12 +158,12 @@ main h2{
 main li{
     padding-bottom: 5px;
 }
-#nav>img{
+.nav>img{
     width: 30px;
     height: 30px;
     color: #9E1346;
 }
-#nav{
+.nav{
     background-color: #F5C76B;
     height: 83px;
     width: 100%;
@@ -167,7 +171,7 @@ main li{
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    top: 90%;
+    top: 91%;
     left: 0;
 }
 
@@ -323,4 +327,49 @@ footer div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+/*Page Profil*/
+#fleche{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+#profil{
+    background-color: white;
+    margin-top: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+#profil_pres{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#profil h2{
+    text-align: left;
+    padding-left: 25px;
+}
+    .Regle_alt_row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px black solid;
+        .Regle_alt_nom{
+            padding-left: 20px;
+            color: black;
+        }
+        .Regle_alt_createur{
+            padding-right: 20px;
+            color: #9E1346;
+        }
+    }
+
+#rules_like, #Mes_rules{
+    margin-top: 50px;
 }

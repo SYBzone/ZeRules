@@ -18,12 +18,8 @@
         <h2>Vous pouvez retrouver ce jeu</h2>
         <Map />
         <p>90000 Belfort</p>
-        <section id="rect-bandeau">
-          <div id="nav">
-            <img :src="'/img/interface/playing-cards.png'" alt="cartes" width="30px">
-            <img id="loupe" :src="'/img/interface/loupe.png'" alt="Loupe" width="30px">
-            <img :src="'/img/interface/user.png'" alt="user" width="30px">
-          </div>
+        <section class="rect-bandeau">
+          <Nav />
         </section>
       </main>
     </div>
@@ -32,19 +28,18 @@
         <div class="Regle_alt_liste" v-for="regle_alternative in listeRegleAlternative" :key="regle_alternative">
           <div class="Regle_alt_row">
             <p class="Regle_alt_nom">
-              {{regleAlternative.nom}}
+              {{regle_alternative.nom}}
             </p>
             <p class="Regle_alt_createur">
-              {{regleAlternative.createur}}
+              {{regle_alternative.createur}}
             </p>
           </div>
         </div>
-        <section id="rect-bandeau">
-          <div id="nav">
-            <img :src="'/img/interface/playing-cards.png'" alt="cartes" width="30px">
-            <img id="loupe" :src="'/img/interface/loupe.png'" alt="Loupe" width="30px">
-            <img :src="'/img/interface/user.png'" alt="user" width="30px">
-          </div>
+        <a href="../api/inscription.php">
+          <img :src="'/img/interface/clock.png'" alt="ajouter">
+        </a>
+        <section class="rect-bandeau">
+          <Nav />
         </section>
       </main>
     </div>
@@ -57,16 +52,18 @@
 
 import axios from 'axios';
 import Map from '@/components/Map';
+import Nav from "@/components/nav";
 import headerRegleOfficiel from "@/components/headerRegleOfficiel";
 export default {
   components: {
     headerRegleOfficiel,
-    Map
+    Map,
+    Nav
   },
   data() {
     return {
       regleOfficielle: {},
-      listeRegleAlternative: {},
+      listeRegleAlternative: [],
       currentTab: 'officiel'
     }
   },
@@ -80,7 +77,16 @@ export default {
         .catch(function (error) {
           console.log(error)
         });
+    axios.get('http://localhost/ZeRulesV0.1/api/Controllers/listeRegleAlternative.php?id=' + this.$route.params.id)
+        .then(response => {
+          this.listeRegleAlternative = response.data;
+          console.log("règle", this.listeRegleAlternative);
+        })
+        .catch(function (error) {
+          console.log(error)
+        });
   },
+
   methods: {
     changeTab(newTab) {
       console.log(newTab)

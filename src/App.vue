@@ -26,4 +26,4 @@
 @import './assets/css/styles-graphiques.scss';
 @import './assets/css/mise-en-page.scss';
 </style>
-<script :src="'assets/js/basique.js'"></script>
+<script src="./assets/js/basique.js"></script>

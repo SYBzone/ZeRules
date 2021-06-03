@@ -3,7 +3,7 @@
     <div id="haut">
       <a @click="$router.go(-1)"><img :src="'/img/interface/flèche.svg'" alt="flèche"></a>
       <h1>{{regleOfficielle.nom}}</h1>
-      <img :src="'/img/interface/page_jeux/etoile_vide.png'" alt="etoile vide" onclick="this.src='img/interface/page_jeux/etoile_pleine.png'">
+      <img :src="'/img/interface/page_jeux/etoile_vide.png'" alt="etoile vide" onclick="this.src='/img/interface/page_jeux/etoile_pleine.png'">
     </div>
     <div id="bas">
       <div id="officiel" class="border" @click="emitChangeTab('officiel')">
