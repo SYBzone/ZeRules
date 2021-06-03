@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div id="regle">
 
     <headerRegleOfficiel @changeCurrentTab="changeTab" />
 
@@ -35,7 +35,9 @@
             </p>
           </div>
         </div>
-          <img :src="'/img/interface/ajout.png'" alt="ajouter">
+          <router-link :to="{name:'creationRegle'}">
+            <button id="ajout">Ajouter</button>
+          </router-link>
         <section class="rect-bandeau">
           <Nav />
         </section>

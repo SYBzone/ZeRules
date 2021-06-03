@@ -311,7 +311,8 @@ h1{
     }
 
 }
-footer{
+
+footer {
     border-top: #9E1346 2px solid;
     padding-top: 50px;
     margin-top: 50px;
@@ -375,4 +376,19 @@ footer div{
 
 #rules_like, #Mes_rules{
     margin-top: 50px;
+}
+#ajout{
+    margin-top: 25px;
+    margin-left: 42%;
+    background-color: #9E1346;
+    color:white;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 10px;
+
+}
+#regle #ajout{
+
+    margin-left: 45%;
 }
