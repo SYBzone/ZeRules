@@ -9,10 +9,10 @@ import recherche from "@/views/recherche";
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/',  component: Homepage,name:'homepage' },
+  { path: '/',  component: recherche,name:'recherche' },
   { path: '/regleofficielle/:id',  component: RegleOfficielle, name: 'regleOfficielle' },
   { path : '/creation_Regle', component: creation_Regle, name: 'creation_Regle'},
-  {path : '/recherche', component: recherche, name:'recherche'},
+  {path : '/homepage', component: Homepage, name:'Homepage'},
   {path : '/profil', component: profil, name: 'profil'},
 ]
 

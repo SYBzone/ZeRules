@@ -35,7 +35,7 @@
             </p>
           </div>
         </div>
-          <router-link :to="{name:'creationRegle'}">
+          <router-link :to="{name:'creation_Regle'}">
             <button id="ajout">Ajouter</button>
           </router-link>
         <section class="rect-bandeau">
