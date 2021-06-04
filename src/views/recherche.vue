@@ -31,32 +31,7 @@ import Header_recherche from "@/components/header_recherche";
 export default {
   components: {Header_recherche,
   Nav},
-
-  data(){
-    return{
-      regles:[
-        {
-          name: '2 joueurs ou plus',
-          items:[
-            {
-              nom: "Uno",
-              id: "1",
-            },
-            {
-              nom: "Scrabble",
-              id: "3",
-            },
-            {
-              nom: "Backgammon",
-              id: "",
-            },
-
-          ]
-        }
-
-      ]
-    }
-  }
+  
 }
 
 </script>
